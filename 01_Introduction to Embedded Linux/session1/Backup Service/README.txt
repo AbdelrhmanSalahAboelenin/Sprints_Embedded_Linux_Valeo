@@ -1,0 +1,1 @@
+As part of the system administration team, you need to create a systemd service that automates the backup of a specific directory to another location. The service should run daily at 2 AM and perform a full backup using the "rsync" command. 

@@ -1,0 +1,1 @@
+I used (nmcli) with a native ubuntu on my laptop so i used my real wifi networks Create a shell script that checks the signal of all the available WIFI networks, and suggests the one with the best signal to connect to. 

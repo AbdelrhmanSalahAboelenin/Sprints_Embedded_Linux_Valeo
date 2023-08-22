@@ -1,0 +1,17 @@
+developed math library to be used by other developers. the developers have the option to select to use either a static or a shared library. 
+
+
+
+#The command used to build the static library :
+ar rcs static.a mathlib.o -lm
+
+#The command to be used to link the static library to the test app :
+gcc test.c -L. static.a -o test_static -lm
+
+#The command used to build the shared library :
+gcc -shared -o shared.so mathlib.c -lm
+
+#The command used to link the shared library to the test app :
+gcc -o test_shared test.c -L. shared.so -Wl,-rpath,. -lm
+
+

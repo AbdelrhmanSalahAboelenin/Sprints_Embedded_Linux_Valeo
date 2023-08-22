@@ -1,0 +1,10 @@
+[Unit]
+Descreption=Timer service for backup
+
+[Timer]
+oncalendar=*-*-* 02:00:00
+Presistent=true
+
+[Install]
+Wantedby=multi-user.target
+

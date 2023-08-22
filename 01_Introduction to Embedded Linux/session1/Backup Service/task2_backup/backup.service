@@ -1,0 +1,7 @@
+[Unit]
+Description=backup service
+Wants=backup.timer
+
+[Service]
+User=root
+ExecStart=/home/Desktop/scripts/backup.bash
