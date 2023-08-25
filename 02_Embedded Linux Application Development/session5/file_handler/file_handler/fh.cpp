@@ -1,4 +1,3 @@
-/** Compilation: g++ -o fh fh.c -lrt -lpthread **/
 #include <iostream>
 #include <fstream>
 #include <sys/mman.h>
@@ -8,13 +7,13 @@
 #include <semaphore.h>
 #include <cstring>
 #include <sys/epoll.h>
-#include "../log/simple_logger.h"
+#include "../logger/simpleLogger.h"
 
 
-#define BackingFile "/my_shared_memory_file"
-#define AccessPerms 0644
-#define ByteSize 1024
-#define SemaphoreName "/my_semaphore"
+#define BackingFile     "/my_shared_memory_file"
+#define AccessPerms      0644
+#define ByteSize         1024
+#define SemaphoreName   "/my_semaphore"
 
 void report_and_exit(const char* msg) {
   perror(msg);
@@ -22,16 +21,19 @@ void report_and_exit(const char* msg) {
 }
 
 int main() {
-    int fd;
+     int fd;
      void* memptr;
      sem_t* semptr;
-    
-    const char* file = "../fifoChannel";
-     fd = open(file, O_RDONLY);
-    if (fd < 0) return -1; /* no point in continuing */
+     
+     
+    /*****************************************Named pipe********************************************/
+    /*create the named pipe (FIFO) */
+    const char* file = "../my_pipe";
+     fd = open(file, O_RDONLY);        /*open the named pipe for reading */
+    if (fd < 0) return -1;             /* no point in continuing */
     
 
-    char buffer[1024];/**edited*/
+    char buffer[1024];                 /*edited to pass the path of the file or drictory*/
     ssize_t count = read(fd, buffer, sizeof(buffer));
     int value=buffer[0]-'0';
     if (count >= sizeof(buffer)) {
@@ -42,12 +44,16 @@ int main() {
         return -1;
     }
  	 std::string receivedMessage(buffer+1, count);
-
-    close(fd); /* close pipe from read end */
-    unlink(file); /* unlink from the underlying file */
+ 	 
+    /* close pipe from read end */
+    close(fd); 
+    
+    /* unlink from the underlying file */
+    unlink(file); 
     std::cout << "Received value: " << value << std::endl;
 
-    /*shared memory*/
+    /**************************************shared memory***************************************************/
+    
     fd = shm_open(BackingFile, O_RDWR | O_CREAT, AccessPerms);
     if (fd < 0) {report_and_exit("Can't open shared mem segment...");
      LOG_ERROR << "Can't open shared mem segment...";}
@@ -68,14 +74,14 @@ int main() {
 
 if (value == 0) {
 
-    // Open the file for reading
+    /* Open the file for reading */
     FILE* file = fopen(receivedMessage.c_str(), "r");
     if (file == nullptr) {
         report_and_exit("fopen");
         LOG_DEBUG << "fopen";
     }
 
-    // Read the content of the file
+    /* Read the content of the file */
     size_t read_size = fread(memptr, 1, ByteSize, file);
     if (read_size > 0) {
         // Null-terminate the content if needed
@@ -85,17 +91,19 @@ if (value == 0) {
     }
 
     sleep(12);
-    // Close the file and post the semaphore
+    /* Close the file and post the semaphore */
     
     fclose(file);
     sem_post(semptr);
 }
      else if (value == 1) {
-        // Execute "ls" command and capture its output
+     
+        /* Execute "ls" command and capture its output */
         FILE* ls_output = popen(("ls "+receivedMessage).c_str(), "r");
         if (ls_output == nullptr) {report_and_exit("popen");
 	LOG_DEBUG << "popen";}
-        // Read the output and write to shared memory
+	
+        /* Read the output and write to shared memory */
         char buffer[ByteSize];
         size_t read_size = fread(buffer, sizeof(char), ByteSize, ls_output);
         if (read_size > 0) {
@@ -103,12 +111,13 @@ if (value == 0) {
         }
 
         sleep(12);
-        // Close the popen stream and the semaphore
+        
+        /* Close the popen stream and the semaphore */
         pclose(ls_output);
         sem_post(semptr);
     }
 
-    // Cleanup
+    /* Cleanup */
     munmap(memptr, ByteSize);
     close(fd);
     sem_close(semptr);

@@ -1,4 +1,3 @@
-/** Compilation: g++ -o request request.c -lrt -lpthread **/
 #include <iostream>
 #include <cstdio>
 #include <cstring>
@@ -10,14 +9,23 @@
 #include <semaphore.h>
 #include <string>
 #include <sys/shm.h>
-#include "../log/simple_logger.h"
+#include "../logger/simpleLogger.h"
 
 
-#define BackingFile "/my_shared_memory_file"  // Define the shared memory file name
-#define AccessPerms 0644                      // Define the access permissions
-#define ByteSize 1024                         // Define the size of the shared memory segment
-#define SemaphoreName "/my_semaphore"          // Define the name of the semaphore
-#define MemContents "Hello, Shared Memory!"   // Define the content to write to shared memory
+/* Define the shared memory file name*/
+#define BackingFile "/my_shared_memory_file" 
+
+/*Define the access permissions*/ 
+#define AccessPerms 0644 
+
+/* Define the size of the shared memory segment*/                     
+#define ByteSize 1024    
+
+/* Define the name of the semaphore*/    
+#define SemaphoreName "/my_semaphore"       
+
+/*Define the content to write to shared memory*/
+#define MemContents "Hello, Shared Memory!"   
 
 void report_and_exit(const char* msg) {
   perror(msg);
@@ -26,10 +34,15 @@ void report_and_exit(const char* msg) {
 
 
 int main(int argc, char* argv[]) {
+
     LOG_TRACE << "this a trace message";
+    
     LOG_DEBUG << "this a debug message";
+    
     LOG_WARNING << "this a warning message";
+    
     LOG_ERROR << "this a error message";
+    
     LOG_FATAL << "this a fatal message";
 
     if (argc != 3) {
@@ -38,8 +51,9 @@ int main(int argc, char* argv[]) {
         return -1;
     }
     
+    /*buffer  to pass the path of file or directory */
+    
     char message1[1024];
-    //std::string message  ;
    
     strcpy(message1,argv[2]);
 
@@ -58,23 +72,34 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    const char* pipeName = "../fifoChannel";
-    mkfifo(pipeName, 0666); /* read/write for user/group/others */
-    int fd = open(pipeName, O_CREAT | O_WRONLY); /* open as write-only */
-    if (fd < 0) return -1; /* can't go on */
-
+    /**************************************Named pipe********************************************************/
     
-    write(fd, message.c_str(), message.size() + 1); 
-    close(fd); /* close pipe */
+    const char* pipeName = "../my_pipe";
+    
+    /* read/write for user/group/others */
+    mkfifo(pipeName, 0666);
+    
+    /* open as write-only */
+    int fd = open(pipeName, O_CREAT | O_WRONLY); 
+    
+    if (fd < 0) return -1; // can't opening fifo for writing
+
+    /*using .c_str() to convert string to const char* */
+    write(fd, message.c_str(), message.length() + 1);
+
+    /* close pipe */
+    close(fd); 
     unlink(pipeName); /* unlink from the implementing file */
     //std::cout << "Value " << value << " sent to the pipe." << std::endl;
 
     sleep(3);
 
-    /* shared memory */
+    /******************************************* shared memory *************************************************/
+    
     fd = shm_open(BackingFile, O_RDWR, AccessPerms);  /* empty to begin */
     if (fd < 0) {report_and_exit("Can't get file descriptor...");
 	LOG_ERROR << "Can't get file descriptor...";}
+  
     /* get a pointer to memory */
     void* memptr = mmap(NULL,       /* let system pick where to put segment */
                         ByteSize,   /* how many bytes */
@@ -84,6 +109,7 @@ int main(int argc, char* argv[]) {
                         0);         /* offset: start at 1st byte */
     if ((void*) -1 == memptr) {report_and_exit("Can't access segment...");
 	LOG_ERROR << "Can't access segment...";}
+   
     /* create a semaphore for mutual exclusion */
     sem_t* semptr = sem_open(SemaphoreName, /* name */
                             O_CREAT,       /* create the semaphore */
@@ -92,13 +118,14 @@ int main(int argc, char* argv[]) {
     if (semptr == (void*) -1){ report_and_exit("sem_open");
     LOG_ERROR << "sem_open";}
 
-    /* use semaphore as a mutex (lock) by waiting for writer to increment it */
+    /* use semaphore waiting for the writer to increment it */
     if (!sem_wait(semptr)) { /* wait until semaphore != 0 */
         for (int i = 0; i < strlen(MemContents); i++)
             write(STDOUT_FILENO, static_cast<char*>(memptr) + i, 1); /* one byte at a time */
         sem_post(semptr);
     }
 
+    
     /* cleanup */
     munmap(memptr, ByteSize);
     close(fd);

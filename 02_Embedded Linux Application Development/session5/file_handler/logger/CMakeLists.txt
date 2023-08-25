@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(simple_logger)
+project(simpleLogger)
 
 set(Boost_USE_STATIC_LIBS OFF)
 set(Boost_USE_MULTITHREADED ON)
@@ -19,11 +19,11 @@ message(status "** Boost Include: ${Boost_INCLUDE_DIR}")
 message(status "** Boost Libraries: ${Boost_LIBRARY_DIRS}")
 message(status "** Boost Libraries: ${Boost_LIBRARIES}")
 
-add_library(simple_logger simple_logger.cpp)
+add_library(simpleLogger simpleLogger.cpp)
 
 if (${WIN32})
-    target_link_libraries(simple_logger ${Boost_LIBRARIES})
+    target_link_libraries(simpleLogger ${Boost_LIBRARIES})
 else ()
-    target_link_libraries(simple_logger ${Boost_LIBRARIES} pthread)
+    target_link_libraries(simpleLogger ${Boost_LIBRARIES} pthread)
 endif()
 
