@@ -1,0 +1,16 @@
+[Unit]
+Description=service to start the Daemon logger after boot on the raspberry pi
+
+#the service should start after the network is up.
+After=network.target
+
+[Service]
+#to start the app
+ExecStart=/usr/local/bin/my_program.sh
+
+# to start the app if it exits unexpectedly.
+Restart=always 
+User=abderlhman
+
+[Install]
+WantedBy=multi-user.target

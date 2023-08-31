@@ -1,0 +1,14 @@
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles/edit_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles/rebuild_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/CMakeFiles/Math_Application.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/CMakeFiles/edit_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/CMakeFiles/rebuild_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger/CMakeFiles/Daemon_Logger.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger/CMakeFiles/edit_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger/CMakeFiles/rebuild_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/CMakeFiles/IPC_library.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/CMakeFiles/edit_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/CMakeFiles/rebuild_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/CMakeFiles/edit_cache.dir
+/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/CMakeFiles/rebuild_cache.dir
