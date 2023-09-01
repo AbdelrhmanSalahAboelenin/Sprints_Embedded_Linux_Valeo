@@ -1,5 +1,5 @@
 [Unit]
-Description=service to start the Daemon logger after boot on the raspberry pi
+Description=Daemon logger service
 
 #the service should start after the network is up.
 After=network.target
@@ -8,9 +8,13 @@ After=network.target
 #to start the app
 ExecStart=/usr/local/bin/my_program.sh
 
-# to start the app if it exits unexpectedly.
+
 Restart=always 
 User=abderlhman
 
 [Install]
 WantedBy=multi-user.target
+
+#add this file.service to /etc/systemd/system/directory
+#then run this commands to start your service : systemctl enable loggerDaemon.service   systemctl start loggerDaemon.service
+

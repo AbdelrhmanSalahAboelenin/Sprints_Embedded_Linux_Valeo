@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-# Set the compiler to the raspberry pi 4 compiler
+# raspberry pi 4 compiler
 #set(CMAKE_CXX_COMPILER "/home/abderlhman/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-g++")
 
 project(capstone_linux_project)
