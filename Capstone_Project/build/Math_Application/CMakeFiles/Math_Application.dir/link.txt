@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Math_Application.dir/Math_Application.cpp.o -o Math_Application   -L/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library  -Wl,-rpath,/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library ../IPC_library/libIPC_library.a 
