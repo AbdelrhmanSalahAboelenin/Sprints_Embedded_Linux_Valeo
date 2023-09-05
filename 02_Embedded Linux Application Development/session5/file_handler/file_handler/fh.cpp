@@ -1,126 +1,85 @@
-#include <iostream>
-#include <fstream>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <semaphore.h>
-#include <cstring>
-#include <sys/epoll.h>
-#include "../logger/simpleLogger.h"
+#include "fh.hpp"
 
-
-#define BackingFile     "/my_shared_memory_file"
-#define AccessPerms      0644
-#define ByteSize         1024
-#define SemaphoreName   "/my_semaphore"
-
-void report_and_exit(const char* msg) {
-  perror(msg);
-  exit(-1);
+// Function to report an error and exit the program
+void report_and_exit(const char *msg)
+{
+    perror(msg);
+    exit(-1);
 }
 
-int main() {
-     int fd;
-     void* memptr;
-     sem_t* semptr;
-     
-     
-    /*****************************************Named pipe********************************************/
-    /*create the named pipe (FIFO) */
-    const char* file = "../my_pipe";
-     fd = open(file, O_RDONLY);        /*open the named pipe for reading */
-    if (fd < 0) return -1;             /* no point in continuing */
-    
+// Function to handle the "ls" command
+Error_t ls_command(std::string message, void *memptr)
+{
+    // Execute the "ls" command and capture its output
+     FILE *ls_output = popen(("ls " + message).c_str(), "r");
+    if (ls_output == nullptr)
+    {
 
-    char buffer[1024];                 /*edited to pass the path of the file or drictory*/
-    ssize_t count = read(fd, buffer, sizeof(buffer));
-    int value=buffer[0]-'0';
-    if (count >= sizeof(buffer)) {
-    std ::cout<<count<<std::endl;
-        std::cerr << "Error reading from the pipe." << std::endl;
-         LOG_ERROR << "Error reading from the pipe.";
-        close(fd);
-        return -1;
+        report_and_exit("popen");
+        LOG_DEBUG << "popen";
+        return FAILED ;
     }
- 	 std::string receivedMessage(buffer+1, count);
- 	 
-    /* close pipe from read end */
-    close(fd); 
-    
-    /* unlink from the underlying file */
-    unlink(file); 
-    std::cout << "Received value: " << value << std::endl;
 
-    /**************************************shared memory***************************************************/
-    
-    fd = shm_open(BackingFile, O_RDWR | O_CREAT, AccessPerms);
-    if (fd < 0) {report_and_exit("Can't open shared mem segment...");
-     LOG_ERROR << "Can't open shared mem segment...";}
+    // Read the output and write to shared memory
+    char buffer[ByteSize];
+    size_t read_size = fread(buffer, sizeof(char), ByteSize, ls_output);
 
-    ftruncate(fd, ByteSize);
+    // Check if data was successfully read from the command
+    if (read_size > 0)
+    {
+        std::cout << "size returned from list command = " << read_size << std::endl;
 
-    memptr = mmap(NULL, ByteSize, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
-    if ((void*) -1 == memptr) {report_and_exit("Can't get segment...");
-	 LOG_ERROR << "Can't get segment...";}
-    std::cerr << "shared mem address: " << memptr << " [0.." << ByteSize - 1 << "]" << std::endl;
-    LOG_TRACE << "shared mem address:";
-    std::cerr << "backing file:       /dev/shm" << BackingFile << std::endl;
-    LOG_TRACE << "backing file:       /dev/shm";
+         // Copy the output to the shared memory
+        strncpy(static_cast<char *>(memptr), buffer, ByteSize);
+        
+    }
+    else 
+    {
+        std::cout<<"read_size not > 0 "<<std::endl;
+        return FAILED ;
+    }
 
-     semptr = sem_open(SemaphoreName, O_CREAT, AccessPerms, 0);
-    if (semptr == (void*) -1) report_and_exit("sem_open");
-    
+    // Close the popen stream and the semaphore
+    pclose(ls_output);
+    return SUCCESS ;
+}
 
-if (value == 0) {
+// Function to handle the "read" command
+Error_t read_command(std::string message, void *memptr)
+{
+    // Get the file size of the requested file
+    struct stat fileStat;
+    if (stat(message.c_str(), &fileStat) != 0)
+    { 
+        std::cout << "Failed to get the file size." << std::endl;
+        return FAILED ;
+    }
+    std::cout << "File size: " << fileStat.st_size << " bytes." << std::endl;
 
-    /* Open the file for reading */
-    FILE* file = fopen(receivedMessage.c_str(), "r");
-    if (file == nullptr) {
+    // Open the requested file
+     FILE *file = fopen(message.c_str(), "r");
+    if (file == nullptr)
+    {
         report_and_exit("fopen");
         LOG_DEBUG << "fopen";
+        return FAILED ;
     }
 
-    /* Read the content of the file */
-    size_t read_size = fread(memptr, 1, ByteSize, file);
-    if (read_size > 0) {
-        // Null-terminate the content if needed
-        if (read_size < ByteSize) {
-            static_cast<char*>(memptr)[read_size] = '\0';
-        }
+    // Read the file content into shared memory
+    size_t read_size = fread(memptr, 1,  fileStat.st_size , file);
+    if (read_size > 0)
+    {
+        // Null-terminate the data in shared memory
+        std::cout << "size returned from read command = " << read_size << std::endl;
+         static_cast<char *>(memptr)[read_size] = '\0';
+    }
+    else 
+    {
+         std::cout<<"read_size not > 0 "<<std::endl;
+        return FAILED ;
     }
 
-    sleep(12);
-    /* Close the file and post the semaphore */
-    
+    // Close the file and post the semaphore 
     fclose(file);
-    sem_post(semptr);
-}
-     else if (value == 1) {
-     
-        /* Execute "ls" command and capture its output */
-        FILE* ls_output = popen(("ls "+receivedMessage).c_str(), "r");
-        if (ls_output == nullptr) {report_and_exit("popen");
-	LOG_DEBUG << "popen";}
-	
-        /* Read the output and write to shared memory */
-        char buffer[ByteSize];
-        size_t read_size = fread(buffer, sizeof(char), ByteSize, ls_output);
-        if (read_size > 0) {
-            strncpy(static_cast<char*>(memptr), buffer, ByteSize);
-        }
-
-        sleep(12);
-        
-        /* Close the popen stream and the semaphore */
-        pclose(ls_output);
-        sem_post(semptr);
-    }
-
-    /* Cleanup */
-    munmap(memptr, ByteSize);
-    close(fd);
-    sem_close(semptr);
-    shm_unlink(BackingFile);
-    return 0;
+    return SUCCESS ;
 }

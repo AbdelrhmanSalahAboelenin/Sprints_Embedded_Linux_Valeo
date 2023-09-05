@@ -1,3 +1,7 @@
-0000003 | 2023-08-25, 16:31:48.728857 [warning] - this a warning message
-0000004 | 2023-08-25, 16:31:48.729334 [error] - this a error message
-0000005 | 2023-08-25, 16:31:48.729375 [fatal] - this a fatal message
+0000001 | 2023-09-05, 19:08:46.550165 [debug] - OrderType= -r
+0000001 | 2023-09-05, 19:09:18.934177 [debug] - OrderType= -l
+0000001 | 2023-09-05, 19:15:34.440572 [error] - the arguments not = 3
+0000001 | 2023-09-05, 19:16:04.474514 [error] - the arguments not = 3
+0000001 | 2023-09-05, 19:16:12.584738 [debug] - OrderType= -r
+0000001 | 2023-09-05, 19:16:24.720497 [debug] - OrderType= -l
+0000001 | 2023-09-05, 19:16:33.880725 [debug] - OrderType= -r
