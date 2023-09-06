@@ -29,25 +29,36 @@ int main(int argc, char* argv[]) {
 
     IPC_library sender("Program_File", 13); // Connect to the existing queue
 
+    // Send a log message from Math_Apllication to the Daemon Logger
     std::string message = "Hello Abdelrhman from Math_Application!";
 
     int num1 = std::atoi(argv[1]);
     char operation = argv[2][0]; 
     int num2 = std::atoi(argv[3]);
 
+std::string log_Message1 = "MathApplication logs are : \n";
+        sender.Send_Message(log_Message1);
     int result = 0;
     switch (operation) {
         case '+':
-            result = add(num1 , num2);
+          { result = add(num1 , num2);
+            std::string log_Message2 = "ADD operation " ;
+            sender.Send_Message(log_Message2);}
             break;
         case '-':
-            result = subtract(num1 , num2);
+            {result = subtract(num1 , num2);
+            std::string log_Message2 = "SUBTRACT operation " ;
+            sender.Send_Message(log_Message2);}
             break;
         case 'x':
-            result = multiply(num1 , num2);
+            {result = multiply(num1 , num2);
+             std::string log_Message2 = "MULTIPLY operation " ;
+            sender.Send_Message(log_Message2);}
             break;
         case '/':
-           result = divide(num1 , num2);
+          { result = divide(num1 , num2);
+            std::string log_Message2 = "DIVIDE operation " ;
+            sender.Send_Message(log_Message2);}
             break;
         default:
             std::cerr << "Invalid operator: " << operation << std::endl;
@@ -55,13 +66,6 @@ int main(int argc, char* argv[]) {
     }
     // Display the result
     std::cout << "the Result is : " << result << std::endl;
-
-    // Send a log message from Math_Apllication to the Daemon Logger
-        std::string log_Message1 = "MathApplication logs are : \n";
-        sender.Send_Message(log_Message1);
-
-        std::string log_Message2 = "the operation is : " + operation;
-        sender.Send_Message(log_Message2);
 
         std::string log_Message3 = "the input numbers are : " + std::to_string(num1) + " and " + std::to_string(num2);
         sender.Send_Message(log_Message3);

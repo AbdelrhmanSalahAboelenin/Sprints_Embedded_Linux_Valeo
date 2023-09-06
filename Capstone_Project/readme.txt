@@ -18,6 +18,7 @@
     Edit CMakeLists.txt:
     set(BOOST_ROOT "/home/john")
     set(CMAKE_CXX_COMPILER "/home/john/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-g++")
+    *** Special Thanks to John Emile to help me in tjis step ***
     9-open my CMakeLists.txt and remove # from line 6 and 7 then save
     10-open terminal and run
         mkdir build_crosscompiler

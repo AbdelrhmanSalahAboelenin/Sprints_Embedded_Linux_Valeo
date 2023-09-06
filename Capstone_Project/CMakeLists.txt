@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.22)
 project(capstone_linux_project)
 
 # For crosscompiler rpi4
-#set(BOOST_ROOT "/home/abderlhman")
-#set(CMAKE_CXX_COMPILER "/home/abderlhman/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-g++")
+set(BOOST_ROOT "/home/abderlhman")
+set(CMAKE_CXX_COMPILER "/home/abderlhman/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-g++")
 
 
 # Find the Boost libraries

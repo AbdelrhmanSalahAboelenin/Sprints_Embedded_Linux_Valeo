@@ -6,8 +6,8 @@
 #include <boost/log/support/date_time.hpp>
 #include <boost/asio.hpp>
 
-#define PORT "55555"
-#define IP "192.168.1.17" //server ip (laptop)
+#define PORT "1234"
+#define IP "192.168.1.4"  //server ip (laptop)
 
 int main() {
     // Log an info message
@@ -46,4 +46,3 @@ int main() {
     }
     return 0;
 }
-
