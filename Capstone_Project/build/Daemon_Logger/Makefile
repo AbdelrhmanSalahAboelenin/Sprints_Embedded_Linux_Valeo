@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+CMAKE_SOURCE_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
+CMAKE_BINARY_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger//CMakeFiles/progress.marks
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger//CMakeFiles/progress.marks
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/clean
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/preinstall
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/preinstall
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule
 .PHONY : Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ Daemon_Logger: Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule
 
 # fast build rule for target.
 Daemon_Logger/fast:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build
 .PHONY : Daemon_Logger/fast
 
 Daemon_Logger.o: Daemon_Logger.cpp.o
@@ -135,7 +135,7 @@ Daemon_Logger.o: Daemon_Logger.cpp.o
 
 # target to build an object file
 Daemon_Logger.cpp.o:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.o
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.o
 .PHONY : Daemon_Logger.cpp.o
 
 Daemon_Logger.i: Daemon_Logger.cpp.i
@@ -143,7 +143,7 @@ Daemon_Logger.i: Daemon_Logger.cpp.i
 
 # target to preprocess a source file
 Daemon_Logger.cpp.i:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.i
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.i
 .PHONY : Daemon_Logger.cpp.i
 
 Daemon_Logger.s: Daemon_Logger.cpp.s
@@ -151,7 +151,7 @@ Daemon_Logger.s: Daemon_Logger.cpp.s
 
 # target to generate assembly for a file
 Daemon_Logger.cpp.s:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.s
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/Daemon_Logger.cpp.s
 .PHONY : Daemon_Logger.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

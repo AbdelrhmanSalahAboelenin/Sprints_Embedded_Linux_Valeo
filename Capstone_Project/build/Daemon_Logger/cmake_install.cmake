@@ -1,4 +1,4 @@
-# Install script for directory: /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Daemon_Logger
+# Install script for directory: /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Daemon_Logger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

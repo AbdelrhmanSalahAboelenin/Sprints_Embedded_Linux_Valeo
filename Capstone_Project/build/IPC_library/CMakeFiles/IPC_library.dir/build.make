@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+CMAKE_SOURCE_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
+CMAKE_BINARY_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
 
 # Include any dependencies generated for this target.
 include IPC_library/CMakeFiles/IPC_library.dir/depend.make
@@ -72,16 +72,16 @@ include IPC_library/CMakeFiles/IPC_library.dir/flags.make
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o: IPC_library/CMakeFiles/IPC_library.dir/flags.make
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o: ../IPC_library/IPC_library.cpp
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o: IPC_library/CMakeFiles/IPC_library.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o -MF CMakeFiles/IPC_library.dir/IPC_library.cpp.o.d -o CMakeFiles/IPC_library.dir/IPC_library.cpp.o -c /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o -MF CMakeFiles/IPC_library.dir/IPC_library.cpp.o.d -o CMakeFiles/IPC_library.dir/IPC_library.cpp.o -c /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp
 
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IPC_library.dir/IPC_library.cpp.i"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp > CMakeFiles/IPC_library.dir/IPC_library.cpp.i
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp > CMakeFiles/IPC_library.dir/IPC_library.cpp.i
 
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IPC_library.dir/IPC_library.cpp.s"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp -o CMakeFiles/IPC_library.dir/IPC_library.cpp.s
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp -o CMakeFiles/IPC_library.dir/IPC_library.cpp.s
 
 # Object files for target IPC_library
 IPC_library_OBJECTS = \
@@ -93,19 +93,19 @@ IPC_library_EXTERNAL_OBJECTS =
 IPC_library/libIPC_library.a: IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o
 IPC_library/libIPC_library.a: IPC_library/CMakeFiles/IPC_library.dir/build.make
 IPC_library/libIPC_library.a: IPC_library/CMakeFiles/IPC_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libIPC_library.a"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -P CMakeFiles/IPC_library.dir/cmake_clean_target.cmake
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IPC_library.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libIPC_library.a"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -P CMakeFiles/IPC_library.dir/cmake_clean_target.cmake
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/IPC_library.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 IPC_library/CMakeFiles/IPC_library.dir/build: IPC_library/libIPC_library.a
 .PHONY : IPC_library/CMakeFiles/IPC_library.dir/build
 
 IPC_library/CMakeFiles/IPC_library.dir/clean:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -P CMakeFiles/IPC_library.dir/cmake_clean.cmake
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library && $(CMAKE_COMMAND) -P CMakeFiles/IPC_library.dir/cmake_clean.cmake
 .PHONY : IPC_library/CMakeFiles/IPC_library.dir/clean
 
 IPC_library/CMakeFiles/IPC_library.dir/depend:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/CMakeFiles/IPC_library.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/CMakeFiles/IPC_library.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : IPC_library/CMakeFiles/IPC_library.dir/depend
 

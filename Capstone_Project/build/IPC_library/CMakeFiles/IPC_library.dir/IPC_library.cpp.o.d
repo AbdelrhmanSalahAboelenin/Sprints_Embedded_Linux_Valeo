@@ -1,7 +1,7 @@
 IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o: \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.cpp \
  /usr/include/stdc-predef.h \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.hpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/IPC_library/IPC_library.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -156,4 +156,11 @@ IPC_library/CMakeFiles/IPC_library.dir/IPC_library.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/msg.h \
  /usr/include/x86_64-linux-gnu/bits/msq.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_msqid_ds.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_msqid64_ds.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_msqid64_ds.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h

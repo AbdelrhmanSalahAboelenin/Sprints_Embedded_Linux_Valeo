@@ -1,5 +1,5 @@
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o: \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -193,6 +193,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/config/detail/posix_features.hpp \
  /usr/include/boost/config/detail/suffix.hpp \
  /usr/include/boost/config/helper_macros.hpp \
+ /usr/include/boost/config/detail/cxx_composite.hpp \
  /usr/include/boost/thread/detail/config.hpp \
  /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp \
@@ -242,6 +243,8 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/mp11/detail/mp_list.hpp \
  /usr/include/boost/mp11/detail/mp_fold.hpp \
  /usr/include/boost/mp11/detail/config.hpp \
+ /usr/include/boost/mp11/detail/mp_front.hpp \
+ /usr/include/boost/mp11/detail/mp_rename.hpp \
  /usr/include/boost/parameter/aux_/tagged_argument.hpp \
  /usr/include/boost/parameter/keyword_fwd.hpp \
  /usr/include/boost/mpl/eval_if.hpp /usr/include/boost/mpl/if.hpp \
@@ -273,15 +276,20 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/preprocessor/control/if.hpp \
  /usr/include/boost/preprocessor/control/iif.hpp \
  /usr/include/boost/preprocessor/logical/bool.hpp \
+ /usr/include/boost/preprocessor/config/limits.hpp \
+ /usr/include/boost/preprocessor/logical/limits/bool_256.hpp \
  /usr/include/boost/preprocessor/facilities/empty.hpp \
  /usr/include/boost/preprocessor/punctuation/comma.hpp \
  /usr/include/boost/preprocessor/repeat.hpp \
  /usr/include/boost/preprocessor/repetition/repeat.hpp \
  /usr/include/boost/preprocessor/debug/error.hpp \
  /usr/include/boost/preprocessor/detail/auto_rec.hpp \
+ /usr/include/boost/preprocessor/detail/limits/auto_rec_256.hpp \
  /usr/include/boost/preprocessor/tuple/eat.hpp \
+ /usr/include/boost/preprocessor/repetition/limits/repeat_256.hpp \
  /usr/include/boost/preprocessor/inc.hpp \
  /usr/include/boost/preprocessor/arithmetic/inc.hpp \
+ /usr/include/boost/preprocessor/arithmetic/limits/inc_256.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/enum.hpp \
  /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp \
  /usr/include/boost/mpl/limits/arity.hpp \
@@ -292,6 +300,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/preprocessor/empty.hpp \
  /usr/include/boost/preprocessor/arithmetic/add.hpp \
  /usr/include/boost/preprocessor/arithmetic/dec.hpp \
+ /usr/include/boost/preprocessor/arithmetic/limits/dec_256.hpp \
  /usr/include/boost/preprocessor/control/while.hpp \
  /usr/include/boost/preprocessor/list/fold_left.hpp \
  /usr/include/boost/preprocessor/list/detail/fold_left.hpp \
@@ -300,17 +309,34 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/preprocessor/detail/is_binary.hpp \
  /usr/include/boost/preprocessor/detail/check.hpp \
  /usr/include/boost/preprocessor/logical/compl.hpp \
+ /usr/include/boost/preprocessor/list/detail/limits/fold_left_256.hpp \
+ /usr/include/boost/preprocessor/list/limits/fold_left_256.hpp \
  /usr/include/boost/preprocessor/list/fold_right.hpp \
  /usr/include/boost/preprocessor/list/detail/fold_right.hpp \
  /usr/include/boost/preprocessor/list/reverse.hpp \
+ /usr/include/boost/preprocessor/list/detail/limits/fold_right_256.hpp \
  /usr/include/boost/preprocessor/control/detail/while.hpp \
+ /usr/include/boost/preprocessor/control/detail/limits/while_256.hpp \
+ /usr/include/boost/preprocessor/control/limits/while_256.hpp \
+ /usr/include/boost/preprocessor/logical/bitor.hpp \
  /usr/include/boost/preprocessor/tuple/elem.hpp \
  /usr/include/boost/preprocessor/facilities/expand.hpp \
  /usr/include/boost/preprocessor/facilities/overload.hpp \
  /usr/include/boost/preprocessor/variadic/size.hpp \
+ /usr/include/boost/preprocessor/facilities/check_empty.hpp \
+ /usr/include/boost/preprocessor/variadic/has_opt.hpp \
+ /usr/include/boost/preprocessor/variadic/limits/size_64.hpp \
  /usr/include/boost/preprocessor/tuple/rem.hpp \
  /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
  /usr/include/boost/preprocessor/variadic/elem.hpp \
+ /usr/include/boost/preprocessor/variadic/limits/elem_64.hpp \
+ /usr/include/boost/preprocessor/arithmetic/detail/is_maximum_number.hpp \
+ /usr/include/boost/preprocessor/comparison/equal.hpp \
+ /usr/include/boost/preprocessor/comparison/not_equal.hpp \
+ /usr/include/boost/preprocessor/comparison/limits/not_equal_256.hpp \
+ /usr/include/boost/preprocessor/arithmetic/detail/maximum_number.hpp \
+ /usr/include/boost/preprocessor/arithmetic/detail/is_minimum_number.hpp \
+ /usr/include/boost/preprocessor/logical/not.hpp \
  /usr/include/boost/preprocessor/arithmetic/sub.hpp \
  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
  /usr/include/boost/mpl/aux_/lambda_support.hpp \
@@ -333,17 +359,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/parameter/aux_/result_of0.hpp \
  /usr/include/boost/parameter/aux_/use_default_tag.hpp \
  /usr/include/boost/utility/result_of.hpp \
- /usr/include/boost/preprocessor/iteration/iterate.hpp \
- /usr/include/boost/preprocessor/array/elem.hpp \
- /usr/include/boost/preprocessor/array/data.hpp \
- /usr/include/boost/preprocessor/array/size.hpp \
- /usr/include/boost/preprocessor/slot/slot.hpp \
- /usr/include/boost/preprocessor/slot/detail/def.hpp \
- /usr/include/boost/preprocessor/repetition/enum_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
- /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
- /usr/include/boost/preprocessor/facilities/intercept.hpp \
  /usr/include/boost/type_traits/is_pointer.hpp \
  /usr/include/boost/type_traits/is_member_function_pointer.hpp \
  /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
@@ -356,11 +371,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/type_traits/conditional.hpp \
  /usr/include/boost/type_traits/type_identity.hpp \
  /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
- /usr/include/boost/preprocessor/slot/detail/shared.hpp \
- /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
- /usr/include/boost/utility/detail/result_of_iterate.hpp \
+ /usr/include/boost/utility/detail/result_of_variadic.hpp \
  /usr/include/boost/mp11/list.hpp \
  /usr/include/boost/mp11/detail/mp_is_list.hpp \
  /usr/include/boost/mp11/detail/mp_append.hpp \
@@ -384,6 +395,11 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/mpl/aux_/config/arrays.hpp \
  /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
  /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
+ /usr/include/boost/preprocessor/array/elem.hpp \
+ /usr/include/boost/preprocessor/array/data.hpp \
+ /usr/include/boost/preprocessor/array/size.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_params.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
  /usr/include/boost/mpl/aux_/config/has_apply.hpp \
  /usr/include/boost/mpl/aux_/msvc_never_true.hpp \
  /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp \
@@ -500,6 +516,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/move/utility_core.hpp \
  /usr/include/boost/move/detail/meta_utils.hpp \
  /usr/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/include/boost/move/detail/addressof.hpp \
  /usr/include/boost/static_assert.hpp \
  /usr/include/boost/core/addressof.hpp \
  /usr/include/boost/type_traits/is_nothrow_swappable.hpp \
@@ -510,12 +527,15 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/type_traits/is_complete.hpp \
  /usr/include/boost/type_traits/detail/yes_no_type.hpp \
  /usr/include/boost/type_traits/enable_if.hpp \
- /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
  /usr/include/boost/preprocessor/seq/enum.hpp \
  /usr/include/boost/preprocessor/seq/size.hpp \
+ /usr/include/boost/preprocessor/seq/limits/size_256.hpp \
+ /usr/include/boost/preprocessor/seq/limits/enum_256.hpp \
  /usr/include/boost/log/detail/parameter_tools.hpp \
- /usr/include/boost/preprocessor/comparison/equal.hpp \
- /usr/include/boost/preprocessor/comparison/not_equal.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_binary_params.hpp \
+ /usr/include/boost/preprocessor/repetition/repeat_from_to.hpp \
+ /usr/include/boost/preprocessor/facilities/intercept.hpp \
+ /usr/include/boost/preprocessor/facilities/limits/intercept_256.hpp \
  /usr/include/boost/log/detail/sfinae_tools.hpp \
  /usr/include/boost/log/attributes/attribute_set.hpp \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
@@ -542,7 +562,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
  /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
  /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
- /usr/include/boost/checked_delete.hpp \
  /usr/include/boost/core/checked_delete.hpp /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
@@ -558,9 +577,10 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
  /usr/include/boost/throw_exception.hpp \
- /usr/include/boost/assert/source_location.hpp \
- /usr/include/boost/current_function.hpp \
  /usr/include/boost/exception/exception.hpp \
+ /usr/include/boost/assert/source_location.hpp \
+ /usr/include/boost/current_function.hpp /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
  /usr/include/boost/smart_ptr/detail/spinlock.hpp \
  /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
@@ -578,7 +598,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/type_index/stl_type_index.hpp \
  /usr/include/boost/type_index/type_index_facade.hpp \
  /usr/include/boost/container_hash/hash_fwd.hpp \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
  /usr/include/boost/type_traits/is_volatile.hpp \
@@ -601,8 +620,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/attributes/attribute_cast.hpp \
  /usr/include/boost/log/attributes/attribute_value_impl.hpp \
  /usr/include/boost/log/utility/strictest_lock.hpp \
- /usr/include/boost/mpl/integral_c.hpp \
- /usr/include/boost/mpl/integral_c_fwd.hpp \
  /usr/include/boost/log/sources/record_ostream.hpp \
  /usr/include/boost/core/uncaught_exceptions.hpp \
  /usr/include/boost/log/detail/native_typeof.hpp \
@@ -618,7 +635,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/utility/string_ref_fwd.hpp \
  /usr/include/boost/utility/string_view_fwd.hpp \
  /usr/include/boost/log/detail/attachable_sstream_buf.hpp \
- /usr/include/boost/locale/utf.hpp \
  /usr/include/boost/log/detail/code_conversion.hpp \
  /usr/include/boost/log/detail/is_character_type.hpp \
  /usr/include/boost/log/utility/string_literal_fwd.hpp \
@@ -659,7 +675,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/preprocessor/comparison/greater.hpp \
  /usr/include/boost/preprocessor/comparison/less.hpp \
  /usr/include/boost/preprocessor/comparison/less_equal.hpp \
- /usr/include/boost/preprocessor/logical/not.hpp \
+ /usr/include/boost/preprocessor/repetition/enum_shifted_params.hpp \
  /usr/include/boost/log/detail/sink_init_helpers.hpp \
  /usr/include/boost/type_traits/is_array.hpp \
  /usr/include/boost/log/expressions/formatter.hpp \
@@ -667,19 +683,40 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/attributes/value_visitation.hpp \
  /usr/include/boost/log/exceptions.hpp \
  /usr/include/boost/system/error_code.hpp \
- /usr/include/boost/system/api_config.hpp \
- /usr/include/boost/system/detail/config.hpp \
- /usr/include/boost/cerrno.hpp \
+ /usr/include/boost/system/detail/error_code.hpp \
+ /usr/include/boost/system/is_error_code_enum.hpp \
+ /usr/include/boost/system/detail/error_category.hpp \
+ /usr/include/boost/system/detail/config.hpp /usr/include/c++/11/atomic \
+ /usr/include/boost/system/detail/error_condition.hpp \
  /usr/include/boost/system/detail/generic_category.hpp \
- /usr/include/boost/system/detail/system_category_posix.hpp \
- /usr/include/boost/system/detail/std_interoperability.hpp \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/bits/stl_map.h \
- /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/limits /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/boost/system/detail/generic_category_message.hpp \
+ /usr/include/boost/system/detail/enable_if.hpp \
+ /usr/include/boost/system/detail/is_same.hpp \
+ /usr/include/boost/system/detail/errc.hpp \
+ /usr/include/boost/system/is_error_condition_enum.hpp \
+ /usr/include/boost/system/detail/cerrno.hpp \
+ /usr/include/boost/system/detail/append_int.hpp \
+ /usr/include/boost/system/detail/snprintf.hpp \
+ /usr/include/c++/11/cstdarg \
+ /usr/include/boost/system/detail/system_category.hpp \
+ /usr/include/boost/system/detail/system_category_impl.hpp \
+ /usr/include/boost/system/detail/system_category_message.hpp \
+ /usr/include/boost/system/api_config.hpp \
+ /usr/include/boost/system/detail/interop_category.hpp \
+ /usr/include/boost/system/detail/std_category.hpp \
+ /usr/include/boost/system/error_category.hpp \
+ /usr/include/boost/system/detail/error_category_impl.hpp \
+ /usr/include/boost/system/detail/std_category_impl.hpp \
+ /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/boost/system/error_condition.hpp \
+ /usr/include/boost/system/errc.hpp \
+ /usr/include/boost/system/generic_category.hpp \
+ /usr/include/boost/system/system_category.hpp \
+ /usr/include/boost/system/detail/throws.hpp \
  /usr/include/boost/system/system_error.hpp \
  /usr/include/boost/log/attributes/fallback_policy.hpp \
  /usr/include/boost/log/utility/type_dispatch/static_type_dispatcher.hpp \
@@ -718,6 +755,8 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/mpl/vector/aux_/iterator.hpp \
  /usr/include/boost/mpl/plus.hpp \
  /usr/include/boost/mpl/aux_/arithmetic_op.hpp \
+ /usr/include/boost/mpl/integral_c.hpp \
+ /usr/include/boost/mpl/integral_c_fwd.hpp \
  /usr/include/boost/mpl/aux_/largest_int.hpp \
  /usr/include/boost/mpl/aux_/numeric_op.hpp \
  /usr/include/boost/mpl/numeric_cast.hpp \
@@ -738,17 +777,23 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/expressions/keyword.hpp \
  /usr/include/boost/proto/extends.hpp \
  /usr/include/boost/preprocessor/iteration/local.hpp \
+ /usr/include/boost/preprocessor/slot/slot.hpp \
+ /usr/include/boost/preprocessor/slot/detail/def.hpp \
  /usr/include/boost/preprocessor/repetition/enum_trailing_binary_params.hpp \
  /usr/include/boost/preprocessor/seq/for_each.hpp \
  /usr/include/boost/preprocessor/repetition/for.hpp \
  /usr/include/boost/preprocessor/repetition/detail/for.hpp \
+ /usr/include/boost/preprocessor/repetition/detail/limits/for_256.hpp \
+ /usr/include/boost/preprocessor/repetition/limits/for_256.hpp \
  /usr/include/boost/preprocessor/seq/seq.hpp \
  /usr/include/boost/preprocessor/seq/elem.hpp \
+ /usr/include/boost/preprocessor/seq/limits/elem_256.hpp \
  /usr/include/boost/preprocessor/seq/detail/is_empty.hpp \
  /usr/include/boost/utility/addressof.hpp \
  /usr/include/boost/proto/proto_fwd.hpp /usr/include/c++/11/climits \
  /usr/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp \
  /usr/include/boost/proto/traits.hpp \
+ /usr/include/boost/preprocessor/iteration/iterate.hpp \
  /usr/include/boost/preprocessor/repetition/enum.hpp \
  /usr/include/boost/proto/detail/template_arity.hpp \
  /usr/include/boost/proto/detail/template_arity_helper.hpp \
@@ -940,11 +985,13 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/proto/detail/deprecated.hpp \
  /usr/include/boost/preprocessor/tuple/to_list.hpp \
  /usr/include/boost/preprocessor/tuple/size.hpp \
+ /usr/include/boost/preprocessor/tuple/limits/to_list_64.hpp \
  /usr/include/boost/preprocessor/seq/to_tuple.hpp \
  /usr/include/boost/preprocessor/seq/for_each_i.hpp \
  /usr/include/boost/preprocessor/seq/pop_back.hpp \
  /usr/include/boost/preprocessor/seq/first_n.hpp \
  /usr/include/boost/preprocessor/seq/detail/split.hpp \
+ /usr/include/boost/preprocessor/seq/detail/limits/split_256.hpp \
  /usr/include/boost/preprocessor/seq/push_back.hpp \
  /usr/include/boost/preprocessor/seq/push_front.hpp \
  /usr/include/boost/preprocessor/list/for_each_i.hpp \
@@ -1049,6 +1096,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/fusion/adapted/struct/adapt_struct.hpp \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/tuple/to_seq.hpp \
+ /usr/include/boost/preprocessor/tuple/limits/to_seq_64.hpp \
  /usr/include/boost/fusion/adapted/struct/detail/extension.hpp \
  /usr/include/boost/fusion/adapted/struct/detail/adapt_base.hpp \
  /usr/include/boost/fusion/adapted/struct/detail/adapt_auto.hpp \
@@ -1137,7 +1185,12 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/detail/value_ref_visitation.hpp \
  /usr/include/boost/mpl/erase.hpp \
  /usr/include/boost/mpl/aux_/erase_impl.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp \
+ /usr/include/boost/preprocessor/slot/detail/shared.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp \
  /usr/include/boost/preprocessor/iteration/detail/iter/reverse1.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/limits/reverse1_256.hpp \
  /usr/include/boost/log/utility/functional/logical.hpp \
  /usr/include/boost/type_traits/is_unsigned.hpp \
  /usr/include/boost/log/utility/functional/bind_to_log.hpp \
@@ -1202,9 +1255,11 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/preprocessor/control/deduce_d.hpp \
  /usr/include/boost/preprocessor/seq/cat.hpp \
  /usr/include/boost/preprocessor/seq/fold_left.hpp \
+ /usr/include/boost/preprocessor/seq/limits/fold_left_256.hpp \
  /usr/include/boost/preprocessor/seq/transform.hpp \
  /usr/include/boost/preprocessor/arithmetic/mod.hpp \
  /usr/include/boost/preprocessor/arithmetic/detail/div_base.hpp \
+ /usr/include/boost/preprocessor/arithmetic/detail/is_1_number.hpp \
  /usr/include/boost/utility/identity_type.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/range/distance.hpp \
@@ -1286,64 +1341,8 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/lexical_cast/detail/lcast_char_constants.hpp \
  /usr/include/boost/lexical_cast/detail/lcast_unsigned_converters.hpp \
  /usr/include/boost/lexical_cast/detail/inf_nan.hpp \
- /usr/include/boost/math/special_functions/sign.hpp \
- /usr/include/boost/math/tools/config.hpp \
- /usr/include/boost/predef/architecture/x86.h \
- /usr/include/boost/predef/architecture/x86/32.h \
- /usr/include/boost/predef/architecture/x86/64.h \
- /usr/include/c++/11/cfloat \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/include/boost/math/tools/user.hpp \
- /usr/include/boost/math/special_functions/math_fwd.hpp \
- /usr/include/boost/math/special_functions/detail/round_fwd.hpp \
- /usr/include/boost/math/tools/promotion.hpp \
- /usr/include/boost/math/policies/policy.hpp \
- /usr/include/boost/mpl/list.hpp /usr/include/boost/mpl/limits/list.hpp \
- /usr/include/boost/mpl/list/list20.hpp \
- /usr/include/boost/mpl/list/list10.hpp \
- /usr/include/boost/mpl/list/list0.hpp \
- /usr/include/boost/mpl/list/aux_/push_front.hpp \
- /usr/include/boost/mpl/list/aux_/item.hpp \
- /usr/include/boost/mpl/list/aux_/tag.hpp \
- /usr/include/boost/mpl/list/aux_/pop_front.hpp \
- /usr/include/boost/mpl/list/aux_/push_back.hpp \
- /usr/include/boost/mpl/list/aux_/front.hpp \
- /usr/include/boost/mpl/list/aux_/clear.hpp \
- /usr/include/boost/mpl/list/aux_/O1_size.hpp \
- /usr/include/boost/mpl/list/aux_/size.hpp \
- /usr/include/boost/mpl/list/aux_/empty.hpp \
- /usr/include/boost/mpl/list/aux_/begin_end.hpp \
- /usr/include/boost/mpl/list/aux_/iterator.hpp \
- /usr/include/boost/mpl/list/aux_/include_preprocessed.hpp \
- /usr/include/boost/mpl/list/aux_/preprocessed/plain/list10.hpp \
- /usr/include/boost/mpl/list/aux_/preprocessed/plain/list20.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/list.hpp \
- /usr/include/boost/mpl/remove_if.hpp \
- /usr/include/boost/mpl/aux_/inserter_algorithm.hpp \
- /usr/include/boost/mpl/back_inserter.hpp \
- /usr/include/boost/mpl/inserter.hpp \
- /usr/include/boost/mpl/front_inserter.hpp \
- /usr/include/boost/mpl/comparison.hpp \
- /usr/include/boost/mpl/not_equal_to.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/not_equal_to.hpp \
- /usr/include/boost/mpl/greater.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/greater.hpp \
- /usr/include/boost/mpl/less_equal.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/less_equal.hpp \
- /usr/include/boost/mpl/greater_equal.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/greater_equal.hpp \
- /usr/include/c++/11/stdlib.h /usr/include/c++/11/math.h \
- /usr/include/boost/config/no_tr1/complex.hpp /usr/include/c++/11/complex \
- /usr/include/boost/math/special_functions/detail/fp_traits.hpp \
- /usr/include/boost/predef/other/endian.h \
- /usr/include/boost/predef/library/c/gnu.h \
- /usr/include/boost/predef/library/c/_prefix.h \
- /usr/include/boost/predef/detail/_cassert.h \
- /usr/include/boost/predef/platform/android.h \
- /usr/include/boost/math/special_functions/fpclassify.hpp \
- /usr/include/boost/math/tools/real_cast.hpp \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/quadmath.h \
- /usr/include/boost/integer.hpp /usr/include/boost/integer_fwd.hpp \
+ /usr/include/boost/core/cmath.hpp /usr/include/boost/integer.hpp \
+ /usr/include/boost/integer_fwd.hpp \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
  /usr/include/boost/phoenix/operator/comparison.hpp \
  /usr/include/boost/phoenix/operator/detail/define_operator.hpp \
@@ -1360,6 +1359,9 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/detail/unary_function_terminal.hpp \
  /usr/include/boost/log/utility/functional/nop.hpp \
  /usr/include/boost/log/utility/setup/formatter_parser.hpp \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/boost/log/expressions/formatters/stream.hpp \
  /usr/include/boost/phoenix/core/argument.hpp \
  /usr/include/boost/phoenix/core/detail/cpp03/preprocessed/argument.hpp \
@@ -1447,7 +1449,9 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/predef/architecture/arm.h \
  /usr/include/boost/predef/architecture/blackfin.h \
  /usr/include/boost/predef/architecture/convex.h \
+ /usr/include/boost/predef/architecture/e2k.h \
  /usr/include/boost/predef/architecture/ia64.h \
+ /usr/include/boost/predef/architecture/loongarch.h \
  /usr/include/boost/predef/architecture/m68k.h \
  /usr/include/boost/predef/architecture/mips.h \
  /usr/include/boost/predef/architecture/parisc.h \
@@ -1460,6 +1464,9 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/predef/architecture/superh.h \
  /usr/include/boost/predef/architecture/sys370.h \
  /usr/include/boost/predef/architecture/sys390.h \
+ /usr/include/boost/predef/architecture/x86.h \
+ /usr/include/boost/predef/architecture/x86/32.h \
+ /usr/include/boost/predef/architecture/x86/64.h \
  /usr/include/boost/predef/architecture/z.h \
  /usr/include/boost/predef/compiler.h \
  /usr/include/boost/predef/compiler/borland.h \
@@ -1495,7 +1502,10 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/predef/compiler/watcom.h \
  /usr/include/boost/predef/library.h \
  /usr/include/boost/predef/library/c.h \
+ /usr/include/boost/predef/library/c/_prefix.h \
+ /usr/include/boost/predef/detail/_cassert.h \
  /usr/include/boost/predef/library/c/cloudabi.h \
+ /usr/include/boost/predef/library/c/gnu.h \
  /usr/include/boost/predef/library/c/uc.h \
  /usr/include/boost/predef/library/c/vms.h \
  /usr/include/boost/predef/library/c/zos.h \
@@ -1512,7 +1522,12 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/predef/library/std/stdcpp3.h \
  /usr/include/boost/predef/library/std/stlport.h \
  /usr/include/boost/predef/library/std/vacpp.h \
- /usr/include/boost/predef/other.h /usr/include/boost/predef/platform.h \
+ /usr/include/boost/predef/other.h \
+ /usr/include/boost/predef/other/endian.h \
+ /usr/include/boost/predef/platform/android.h \
+ /usr/include/boost/predef/other/wordsize.h \
+ /usr/include/boost/predef/other/workaround.h \
+ /usr/include/boost/predef/platform.h \
  /usr/include/boost/predef/platform/cloudabi.h \
  /usr/include/boost/predef/platform/mingw.h \
  /usr/include/boost/predef/platform/mingw32.h \
@@ -1563,37 +1578,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/detail/fake_mutex.hpp \
  /usr/include/boost/log/sinks/sink.hpp \
  /usr/include/boost/log/sinks/frontend_requirements.hpp \
- /usr/include/boost/mpl/inherit_linearly.hpp \
- /usr/include/boost/thread/tss.hpp \
- /usr/include/boost/log/sinks/text_file_backend.hpp \
- /usr/include/boost/filesystem/path.hpp \
- /usr/include/boost/filesystem/config.hpp \
- /usr/include/boost/filesystem/path_traits.hpp /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /usr/include/boost/io/quoted.hpp \
- /usr/include/boost/io/detail/buffer_fill.hpp \
- /usr/include/boost/io/detail/ostream_guard.hpp \
- /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
- /usr/include/boost/functional/hash_fwd.hpp \
- /usr/include/boost/log/keywords/max_size.hpp \
- /usr/include/boost/log/keywords/max_files.hpp \
- /usr/include/boost/log/keywords/min_free_space.hpp \
- /usr/include/boost/log/keywords/target.hpp \
- /usr/include/boost/log/keywords/target_file_name.hpp \
- /usr/include/boost/log/keywords/file_name.hpp \
- /usr/include/boost/log/keywords/open_mode.hpp \
- /usr/include/boost/log/keywords/auto_flush.hpp \
- /usr/include/boost/log/keywords/rotation_size.hpp \
- /usr/include/boost/log/keywords/time_based_rotation.hpp \
- /usr/include/boost/log/keywords/enable_final_rotation.hpp \
- /usr/include/boost/log/keywords/auto_newline_mode.hpp \
- /usr/include/boost/log/sinks/auto_newline_mode.hpp \
- /usr/include/boost/log/sinks/basic_sink_backend.hpp \
- /usr/include/boost/log/keywords/scan_method.hpp \
- /usr/include/boost/log/utility/setup/common_attributes.hpp \
- /usr/include/boost/log/attributes/clock.hpp \
- /usr/include/boost/log/attributes/time_traits.hpp \
- /usr/include/boost/log/attributes/counter.hpp \
  /usr/include/boost/memory_order.hpp /usr/include/boost/atomic/atomic.hpp \
  /usr/include/boost/atomic/capabilities.hpp \
  /usr/include/boost/atomic/detail/config.hpp \
@@ -1617,11 +1601,13 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/atomic/detail/footer.hpp \
  /usr/include/boost/atomic/detail/int_sizes.hpp \
  /usr/include/boost/atomic/detail/float_sizes.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/include/boost/atomic/detail/caps_gcc_atomic.hpp \
  /usr/include/boost/atomic/detail/caps_arch_gcc_x86.hpp \
  /usr/include/boost/atomic/detail/wait_capabilities.hpp \
  /usr/include/boost/atomic/detail/wait_caps_futex.hpp \
  /usr/include/boost/atomic/detail/classify.hpp \
+ /usr/include/boost/atomic/detail/type_traits/is_enum.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_integral.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_function.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_floating_point.hpp \
@@ -1633,6 +1619,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/atomic/detail/bitwise_cast.hpp \
  /usr/include/boost/atomic/detail/addressof.hpp \
  /usr/include/boost/atomic/detail/type_traits/integral_constant.hpp \
+ /usr/include/boost/atomic/detail/type_traits/has_unique_object_representations.hpp \
  /usr/include/boost/atomic/detail/integral_conversions.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_signed.hpp \
  /usr/include/boost/atomic/detail/type_traits/make_signed.hpp \
@@ -1661,6 +1648,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/atomic/detail/extra_ops_emulated.hpp \
  /usr/include/boost/atomic/detail/extra_ops_gcc_x86.hpp \
  /usr/include/boost/atomic/detail/memory_order_utils.hpp \
+ /usr/include/boost/atomic/detail/type_traits/is_nothrow_default_constructible.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_trivially_default_constructible.hpp \
  /usr/include/boost/atomic/detail/type_traits/conditional.hpp \
  /usr/include/boost/atomic/detail/bitwise_fp_cast.hpp \
@@ -1674,6 +1662,58 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/atomic/detail/type_traits/is_iec559.hpp \
  /usr/include/boost/atomic/detail/extra_fp_ops_emulated.hpp \
  /usr/include/boost/atomic/detail/type_traits/is_trivially_copyable.hpp \
+ /usr/include/boost/thread/tss.hpp \
+ /usr/include/boost/log/sinks/text_file_backend.hpp \
+ /usr/include/boost/optional/optional.hpp \
+ /usr/include/boost/optional/bad_optional_access.hpp \
+ /usr/include/boost/type_traits/conjunction.hpp \
+ /usr/include/boost/type_traits/disjunction.hpp \
+ /usr/include/boost/type_traits/is_assignable.hpp \
+ /usr/include/boost/type_traits/is_constructible.hpp \
+ /usr/include/boost/type_traits/is_destructible.hpp \
+ /usr/include/boost/type_traits/is_nothrow_move_assignable.hpp \
+ /usr/include/boost/type_traits/has_trivial_move_assign.hpp \
+ /usr/include/boost/type_traits/has_nothrow_assign.hpp \
+ /usr/include/boost/none.hpp /usr/include/boost/none_t.hpp \
+ /usr/include/boost/utility/compare_pointees.hpp \
+ /usr/include/boost/optional/detail/optional_config.hpp \
+ /usr/include/boost/optional/detail/optional_factory_support.hpp \
+ /usr/include/boost/optional/detail/optional_aligned_storage.hpp \
+ /usr/include/boost/optional/detail/optional_hash.hpp \
+ /usr/include/boost/optional/detail/optional_trivially_copyable_base.hpp \
+ /usr/include/boost/optional/detail/optional_reference_spec.hpp \
+ /usr/include/boost/optional/detail/optional_relops.hpp \
+ /usr/include/boost/optional/detail/optional_swap.hpp \
+ /usr/include/boost/filesystem/path.hpp \
+ /usr/include/boost/filesystem/config.hpp \
+ /usr/include/boost/filesystem/path_traits.hpp /usr/include/c++/11/list \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
+ /usr/include/boost/filesystem/detail/header.hpp \
+ /usr/include/boost/filesystem/detail/footer.hpp \
+ /usr/include/boost/io/quoted.hpp \
+ /usr/include/boost/io/detail/buffer_fill.hpp \
+ /usr/include/boost/io/detail/ostream_guard.hpp \
+ /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
+ /usr/include/boost/functional/hash_fwd.hpp \
+ /usr/include/boost/log/keywords/max_size.hpp \
+ /usr/include/boost/log/keywords/max_files.hpp \
+ /usr/include/boost/log/keywords/min_free_space.hpp \
+ /usr/include/boost/log/keywords/target.hpp \
+ /usr/include/boost/log/keywords/target_file_name.hpp \
+ /usr/include/boost/log/keywords/file_name.hpp \
+ /usr/include/boost/log/keywords/open_mode.hpp \
+ /usr/include/boost/log/keywords/auto_flush.hpp \
+ /usr/include/boost/log/keywords/rotation_size.hpp \
+ /usr/include/boost/log/keywords/time_based_rotation.hpp \
+ /usr/include/boost/log/keywords/enable_final_rotation.hpp \
+ /usr/include/boost/log/keywords/auto_newline_mode.hpp \
+ /usr/include/boost/log/sinks/auto_newline_mode.hpp \
+ /usr/include/boost/log/sinks/basic_sink_backend.hpp \
+ /usr/include/boost/log/keywords/scan_method.hpp \
+ /usr/include/boost/log/utility/setup/common_attributes.hpp \
+ /usr/include/boost/log/attributes/clock.hpp \
+ /usr/include/boost/log/attributes/time_traits.hpp \
+ /usr/include/boost/log/attributes/counter.hpp \
  /usr/include/boost/log/attributes/current_process_id.hpp \
  /usr/include/boost/log/detail/process_id.hpp \
  /usr/include/boost/log/detail/id.hpp \
@@ -1699,6 +1739,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/expressions/predicates/is_debugger_present.hpp \
  /usr/include/boost/log/expressions/predicates/channel_severity_filter.hpp \
  /usr/include/boost/log/detail/allocator_traits.hpp \
+ /usr/include/boost/log/utility/use_std_allocator.hpp \
  /usr/include/boost/log/expressions/formatters.hpp \
  /usr/include/boost/log/expressions/formatters/format.hpp \
  /usr/include/boost/log/detail/format.hpp \
@@ -1715,12 +1756,13 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/log/keywords/iteration.hpp \
  /usr/include/boost/log/keywords/empty_marker.hpp \
  /usr/include/boost/log/keywords/incomplete_marker.hpp \
+ /usr/include/boost/preprocessor/iteration/detail/iter/limits/forward1_256.hpp \
  /usr/include/boost/log/detail/named_scope_fmt_pp.hpp \
  /usr/include/boost/log/expressions/formatters/char_decorator.hpp \
  /usr/include/boost/log/expressions/formatters/xml_decorator.hpp \
  /usr/include/boost/log/expressions/formatters/csv_decorator.hpp \
  /usr/include/boost/log/expressions/formatters/c_decorator.hpp \
- /usr/include/boost/log/detail/snprintf.hpp /usr/include/c++/11/cstdarg \
+ /usr/include/boost/log/detail/snprintf.hpp \
  /usr/include/boost/log/expressions/formatters/max_size_decorator.hpp \
  /usr/include/boost/log/expressions/formatters/if.hpp \
  /usr/include/boost/log/expressions/formatters/wrap_formatter.hpp \
@@ -1734,12 +1776,14 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/type_traits/has_trivial_constructor.hpp \
  /usr/include/boost/type_traits/has_trivial_copy.hpp \
  /usr/include/boost/type_traits/is_copy_constructible.hpp \
- /usr/include/boost/type_traits/is_constructible.hpp \
- /usr/include/boost/type_traits/is_destructible.hpp \
  /usr/include/boost/type_traits/has_trivial_destructor.hpp \
  /usr/include/boost/function_types/is_callable_builtin.hpp \
  /usr/include/boost/function_types/components.hpp \
- /usr/include/boost/mpl/remove.hpp \
+ /usr/include/boost/mpl/remove.hpp /usr/include/boost/mpl/remove_if.hpp \
+ /usr/include/boost/mpl/aux_/inserter_algorithm.hpp \
+ /usr/include/boost/mpl/back_inserter.hpp \
+ /usr/include/boost/mpl/inserter.hpp \
+ /usr/include/boost/mpl/front_inserter.hpp \
  /usr/include/boost/function_types/config/config.hpp \
  /usr/include/boost/function_types/config/compiler.hpp \
  /usr/include/boost/function_types/config/cc_names.hpp \
@@ -1875,18 +1919,44 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/date_time/dst_transition_generators.hpp \
  /usr/include/boost/log/detail/date_time_format_parser.hpp \
  /usr/include/boost/log/detail/decomposed_time.hpp \
- /usr/include/boost/asio.hpp \
- /usr/include/boost/asio/associated_allocator.hpp \
+ /usr/include/boost/asio.hpp /usr/include/boost/asio/append.hpp \
  /usr/include/boost/asio/detail/config.hpp /usr/include/linux/version.h \
  /usr/include/boost/asio/detail/type_traits.hpp \
  /usr/include/boost/asio/detail/push_options.hpp \
  /usr/include/boost/asio/detail/pop_options.hpp \
+ /usr/include/boost/asio/impl/append.hpp \
+ /usr/include/boost/asio/associator.hpp \
+ /usr/include/boost/asio/async_result.hpp \
+ /usr/include/boost/asio/detail/variadic_templates.hpp \
+ /usr/include/boost/asio/detail/handler_alloc_helpers.hpp \
+ /usr/include/boost/asio/detail/memory.hpp \
+ /usr/include/boost/asio/detail/throw_exception.hpp \
+ /usr/include/boost/asio/detail/noncopyable.hpp \
+ /usr/include/boost/asio/detail/recycling_allocator.hpp \
+ /usr/include/boost/asio/detail/thread_context.hpp \
+ /usr/include/boost/asio/detail/call_stack.hpp \
+ /usr/include/boost/asio/detail/tss_ptr.hpp \
+ /usr/include/boost/asio/detail/keyword_tss_ptr.hpp \
+ /usr/include/boost/asio/detail/impl/thread_context.ipp \
+ /usr/include/boost/asio/detail/thread_info_base.hpp \
+ /usr/include/boost/asio/multiple_exceptions.hpp \
+ /usr/include/boost/asio/impl/multiple_exceptions.ipp \
+ /usr/include/boost/asio/associated_allocator.hpp \
+ /usr/include/boost/asio/detail/functional.hpp \
+ /usr/include/boost/asio/handler_alloc_hook.hpp \
+ /usr/include/boost/asio/impl/handler_alloc_hook.ipp \
+ /usr/include/boost/asio/detail/handler_cont_helpers.hpp \
+ /usr/include/boost/asio/handler_continuation_hook.hpp \
+ /usr/include/boost/asio/detail/handler_invoke_helpers.hpp \
+ /usr/include/boost/asio/handler_invoke_hook.hpp \
+ /usr/include/boost/asio/detail/utility.hpp \
+ /usr/include/boost/asio/as_tuple.hpp \
+ /usr/include/boost/asio/impl/as_tuple.hpp \
  /usr/include/boost/asio/associated_executor.hpp \
  /usr/include/boost/asio/execution/executor.hpp \
  /usr/include/boost/asio/execution/execute.hpp \
  /usr/include/boost/asio/execution/detail/as_invocable.hpp \
  /usr/include/boost/asio/detail/atomic_count.hpp \
- /usr/include/c++/11/atomic /usr/include/boost/asio/detail/memory.hpp \
  /usr/include/boost/asio/execution/receiver_invocation_error.hpp \
  /usr/include/boost/asio/execution/impl/receiver_invocation_error.ipp \
  /usr/include/boost/asio/execution/set_done.hpp \
@@ -1896,7 +1966,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/traits/set_error_member.hpp \
  /usr/include/boost/asio/traits/set_error_free.hpp \
  /usr/include/boost/asio/execution/set_value.hpp \
- /usr/include/boost/asio/detail/variadic_templates.hpp \
  /usr/include/boost/asio/traits/set_value_member.hpp \
  /usr/include/boost/asio/traits/set_value_free.hpp \
  /usr/include/boost/asio/execution/detail/as_receiver.hpp \
@@ -1931,21 +2000,8 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/assert.hpp \
  /usr/include/boost/asio/detail/cstddef.hpp \
  /usr/include/boost/asio/detail/executor_function.hpp \
- /usr/include/boost/asio/detail/handler_alloc_helpers.hpp \
- /usr/include/boost/asio/detail/noncopyable.hpp \
- /usr/include/boost/asio/detail/recycling_allocator.hpp \
- /usr/include/boost/asio/detail/thread_context.hpp \
- /usr/include/boost/asio/detail/call_stack.hpp \
- /usr/include/boost/asio/detail/tss_ptr.hpp \
- /usr/include/boost/asio/detail/keyword_tss_ptr.hpp \
- /usr/include/boost/asio/detail/thread_info_base.hpp \
- /usr/include/boost/asio/multiple_exceptions.hpp \
- /usr/include/boost/asio/impl/multiple_exceptions.ipp \
- /usr/include/boost/asio/handler_alloc_hook.hpp \
- /usr/include/boost/asio/impl/handler_alloc_hook.ipp \
  /usr/include/boost/asio/detail/non_const_lvalue.hpp \
  /usr/include/boost/asio/detail/scoped_ptr.hpp \
- /usr/include/boost/asio/detail/throw_exception.hpp \
  /usr/include/boost/asio/execution/bad_executor.hpp \
  /usr/include/boost/asio/execution/impl/bad_executor.ipp \
  /usr/include/boost/asio/execution/blocking.hpp \
@@ -1965,8 +2021,9 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/impl/posix_event.ipp \
  /usr/include/boost/asio/detail/throw_error.hpp \
  /usr/include/boost/asio/detail/impl/throw_error.ipp \
- /usr/include/boost/asio/error.hpp /usr/include/netdb.h \
- /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/boost/asio/error.hpp /usr/include/boost/cerrno.hpp \
+ /usr/include/netdb.h /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/socket.h \
  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
@@ -2005,8 +2062,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/executor_op.hpp \
  /usr/include/boost/asio/detail/fenced_block.hpp \
  /usr/include/boost/asio/detail/std_fenced_block.hpp \
- /usr/include/boost/asio/detail/handler_invoke_helpers.hpp \
- /usr/include/boost/asio/handler_invoke_hook.hpp \
  /usr/include/boost/asio/detail/scheduler_operation.hpp \
  /usr/include/boost/asio/detail/handler_tracking.hpp \
  /usr/include/boost/asio/detail/impl/handler_tracking.ipp \
@@ -2018,7 +2073,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/execution_context.hpp \
  /usr/include/boost/asio/impl/execution_context.hpp \
  /usr/include/boost/asio/detail/handler_type_requirements.hpp \
- /usr/include/boost/asio/async_result.hpp \
  /usr/include/boost/asio/detail/service_registry.hpp \
  /usr/include/boost/asio/detail/impl/service_registry.hpp \
  /usr/include/boost/asio/detail/impl/service_registry.ipp \
@@ -2027,13 +2081,36 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/conditionally_enabled_mutex.hpp \
  /usr/include/boost/asio/detail/null_event.hpp \
  /usr/include/boost/asio/detail/impl/null_event.ipp \
- /usr/include/boost/asio/detail/reactor_fwd.hpp \
+ /usr/include/boost/asio/detail/scheduler_task.hpp \
  /usr/include/boost/asio/detail/thread.hpp \
  /usr/include/boost/asio/detail/posix_thread.hpp \
  /usr/include/boost/asio/detail/impl/posix_thread.ipp \
  /usr/include/boost/asio/detail/impl/scheduler.ipp \
  /usr/include/boost/asio/detail/concurrency_hint.hpp \
  /usr/include/boost/asio/detail/limits.hpp \
+ /usr/include/boost/asio/detail/scheduler_thread_info.hpp \
+ /usr/include/boost/asio/detail/signal_blocker.hpp \
+ /usr/include/boost/asio/detail/posix_signal_blocker.hpp \
+ /usr/include/c++/11/csignal /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/boost/asio/detail/reactor.hpp \
  /usr/include/boost/asio/detail/epoll_reactor.hpp \
  /usr/include/boost/asio/detail/object_pool.hpp \
@@ -2079,42 +2156,22 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/impl/epoll_reactor.ipp \
  /usr/include/x86_64-linux-gnu/sys/epoll.h \
  /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /usr/include/boost/asio/detail/scheduler_thread_info.hpp \
- /usr/include/boost/asio/detail/signal_blocker.hpp \
- /usr/include/boost/asio/detail/posix_signal_blocker.hpp \
- /usr/include/c++/11/csignal /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /usr/include/boost/asio/detail/thread_group.hpp \
  /usr/include/boost/asio/impl/system_context.hpp \
  /usr/include/boost/asio/impl/system_context.ipp \
+ /usr/include/boost/asio/associated_cancellation_slot.hpp \
+ /usr/include/boost/asio/cancellation_signal.hpp \
+ /usr/include/boost/asio/cancellation_type.hpp \
+ /usr/include/boost/asio/impl/cancellation_signal.ipp \
  /usr/include/boost/asio/awaitable.hpp \
  /usr/include/boost/asio/basic_datagram_socket.hpp \
  /usr/include/boost/asio/basic_socket.hpp \
  /usr/include/boost/asio/any_io_executor.hpp \
+ /usr/include/boost/asio/impl/any_io_executor.ipp \
  /usr/include/boost/asio/detail/io_object_impl.hpp \
  /usr/include/boost/asio/io_context.hpp \
  /usr/include/boost/asio/detail/wrapped_handler.hpp \
  /usr/include/boost/asio/detail/bind_handler.hpp \
- /usr/include/boost/asio/detail/handler_cont_helpers.hpp \
- /usr/include/boost/asio/handler_continuation_hook.hpp \
  /usr/include/boost/asio/detail/chrono.hpp \
  /usr/include/boost/asio/impl/io_context.hpp \
  /usr/include/boost/asio/detail/completion_handler.hpp \
@@ -2130,8 +2187,10 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/buffer.hpp \
  /usr/include/boost/asio/detail/array_fwd.hpp \
  /usr/include/boost/asio/detail/string_view.hpp \
+ /usr/include/boost/asio/is_contiguous_iterator.hpp \
  /usr/include/boost/asio/detail/is_buffer_sequence.hpp \
  /usr/include/boost/asio/detail/buffer_sequence_adapter.hpp \
+ /usr/include/boost/asio/registered_buffer.hpp \
  /usr/include/boost/asio/detail/impl/buffer_sequence_adapter.ipp \
  /usr/include/boost/asio/detail/reactive_null_buffers_op.hpp \
  /usr/include/boost/asio/detail/reactive_socket_accept_op.hpp \
@@ -2157,8 +2216,18 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/timer_scheduler.hpp \
  /usr/include/boost/asio/detail/timer_scheduler_fwd.hpp \
  /usr/include/boost/asio/detail/wait_handler.hpp \
+ /usr/include/boost/asio/basic_file.hpp \
  /usr/include/boost/asio/basic_io_object.hpp \
+ /usr/include/boost/asio/basic_random_access_file.hpp \
  /usr/include/boost/asio/basic_raw_socket.hpp \
+ /usr/include/boost/asio/basic_readable_pipe.hpp \
+ /usr/include/boost/asio/detail/reactive_descriptor_service.hpp \
+ /usr/include/boost/asio/detail/descriptor_ops.hpp \
+ /usr/include/boost/asio/detail/impl/descriptor_ops.ipp \
+ /usr/include/boost/asio/detail/descriptor_read_op.hpp \
+ /usr/include/boost/asio/detail/descriptor_write_op.hpp \
+ /usr/include/boost/asio/posix/descriptor_base.hpp \
+ /usr/include/boost/asio/detail/impl/reactive_descriptor_service.ipp \
  /usr/include/boost/asio/basic_seq_packet_socket.hpp \
  /usr/include/boost/asio/basic_serial_port.hpp \
  /usr/include/boost/asio/serial_port_base.hpp /usr/include/termios.h \
@@ -2174,15 +2243,8 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
  /usr/include/boost/asio/impl/serial_port_base.hpp \
  /usr/include/boost/asio/impl/serial_port_base.ipp \
- /usr/include/boost/asio/detail/reactive_serial_port_service.hpp \
- /usr/include/boost/asio/detail/descriptor_ops.hpp \
- /usr/include/boost/asio/detail/impl/descriptor_ops.ipp \
- /usr/include/boost/asio/detail/reactive_descriptor_service.hpp \
- /usr/include/boost/asio/detail/descriptor_read_op.hpp \
- /usr/include/boost/asio/detail/descriptor_write_op.hpp \
- /usr/include/boost/asio/posix/descriptor_base.hpp \
- /usr/include/boost/asio/detail/impl/reactive_descriptor_service.ipp \
- /usr/include/boost/asio/detail/impl/reactive_serial_port_service.ipp \
+ /usr/include/boost/asio/detail/posix_serial_port_service.hpp \
+ /usr/include/boost/asio/detail/impl/posix_serial_port_service.ipp \
  /usr/include/boost/asio/basic_signal_set.hpp \
  /usr/include/boost/asio/detail/signal_set_service.hpp \
  /usr/include/boost/asio/detail/signal_handler.hpp \
@@ -2198,10 +2260,15 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/basic_waitable_timer.hpp \
  /usr/include/boost/asio/detail/chrono_time_traits.hpp \
  /usr/include/boost/asio/wait_traits.hpp \
+ /usr/include/boost/asio/basic_stream_file.hpp \
  /usr/include/boost/asio/basic_streambuf.hpp \
  /usr/include/boost/asio/basic_streambuf_fwd.hpp \
+ /usr/include/boost/asio/basic_writable_pipe.hpp \
+ /usr/include/boost/asio/bind_allocator.hpp \
+ /usr/include/boost/asio/bind_cancellation_slot.hpp \
  /usr/include/boost/asio/bind_executor.hpp \
  /usr/include/boost/asio/uses_executor.hpp \
+ /usr/include/boost/asio/buffer_registration.hpp \
  /usr/include/boost/asio/buffered_read_stream_fwd.hpp \
  /usr/include/boost/asio/buffered_read_stream.hpp \
  /usr/include/boost/asio/detail/buffer_resize_guard.hpp \
@@ -2213,18 +2280,24 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/buffered_write_stream_fwd.hpp \
  /usr/include/boost/asio/completion_condition.hpp \
  /usr/include/boost/asio/write.hpp /usr/include/boost/asio/impl/write.hpp \
+ /usr/include/boost/asio/detail/base_from_cancellation_state.hpp \
+ /usr/include/boost/asio/cancellation_state.hpp \
  /usr/include/boost/asio/detail/base_from_completion_cond.hpp \
  /usr/include/boost/asio/detail/consuming_buffers.hpp \
  /usr/include/boost/asio/detail/dependent_type.hpp \
  /usr/include/boost/asio/impl/buffered_write_stream.hpp \
  /usr/include/boost/asio/buffers_iterator.hpp \
  /usr/include/boost/asio/co_spawn.hpp /usr/include/boost/asio/compose.hpp \
- /usr/include/boost/asio/impl/compose.hpp \
  /usr/include/boost/asio/connect.hpp \
  /usr/include/boost/asio/impl/connect.hpp \
+ /usr/include/boost/asio/connect_pipe.hpp \
+ /usr/include/boost/asio/impl/connect_pipe.hpp \
+ /usr/include/boost/asio/impl/connect_pipe.ipp \
  /usr/include/boost/asio/coroutine.hpp \
  /usr/include/boost/asio/deadline_timer.hpp \
  /usr/include/boost/asio/defer.hpp /usr/include/boost/asio/impl/defer.hpp \
+ /usr/include/boost/asio/deferred.hpp \
+ /usr/include/boost/asio/impl/deferred.hpp \
  /usr/include/boost/asio/detached.hpp \
  /usr/include/boost/asio/impl/detached.hpp \
  /usr/include/boost/asio/dispatch.hpp \
@@ -2232,6 +2305,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/executor.hpp \
  /usr/include/boost/asio/impl/executor.hpp \
  /usr/include/boost/asio/impl/executor.ipp \
+ /usr/include/boost/asio/file_base.hpp \
  /usr/include/boost/asio/generic/basic_endpoint.hpp \
  /usr/include/boost/asio/generic/detail/endpoint.hpp \
  /usr/include/boost/asio/generic/detail/impl/endpoint.ipp \
@@ -2311,6 +2385,9 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/posix/basic_stream_descriptor.hpp \
  /usr/include/boost/asio/posix/descriptor.hpp \
  /usr/include/boost/asio/posix/stream_descriptor.hpp \
+ /usr/include/boost/asio/prepend.hpp \
+ /usr/include/boost/asio/impl/prepend.hpp \
+ /usr/include/boost/asio/random_access_file.hpp \
  /usr/include/boost/asio/read.hpp /usr/include/boost/asio/impl/read.hpp \
  /usr/include/boost/asio/read_at.hpp \
  /usr/include/boost/asio/impl/read_at.hpp \
@@ -2318,10 +2395,11 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/regex_fwd.hpp \
  /usr/include/boost/regex_fwd.hpp /usr/include/boost/regex/config.hpp \
  /usr/include/boost/regex/user.hpp \
- /usr/include/boost/regex/config/cwchar.hpp \
- /usr/include/boost/regex/v4/regex_fwd.hpp \
- /usr/include/boost/regex/v4/match_flags.hpp \
+ /usr/include/boost/regex/v5/regex_fwd.hpp \
+ /usr/include/boost/regex/v5/match_flags.hpp \
  /usr/include/boost/asio/impl/read_until.hpp \
+ /usr/include/boost/asio/readable_pipe.hpp \
+ /usr/include/boost/asio/recycling_allocator.hpp \
  /usr/include/boost/asio/redirect_error.hpp \
  /usr/include/boost/asio/impl/redirect_error.hpp \
  /usr/include/boost/asio/require_concept.hpp \
@@ -2340,6 +2418,7 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/detail/strand_executor_service.hpp \
  /usr/include/boost/asio/detail/impl/strand_executor_service.hpp \
  /usr/include/boost/asio/detail/impl/strand_executor_service.ipp \
+ /usr/include/boost/asio/stream_file.hpp \
  /usr/include/boost/asio/streambuf.hpp \
  /usr/include/boost/asio/system_timer.hpp \
  /usr/include/boost/asio/this_coro.hpp \
@@ -2356,5 +2435,6 @@ Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o
  /usr/include/boost/asio/windows/overlapped_ptr.hpp \
  /usr/include/boost/asio/windows/random_access_handle.hpp \
  /usr/include/boost/asio/windows/stream_handle.hpp \
+ /usr/include/boost/asio/writable_pipe.hpp \
  /usr/include/boost/asio/write_at.hpp \
  /usr/include/boost/asio/impl/write_at.hpp

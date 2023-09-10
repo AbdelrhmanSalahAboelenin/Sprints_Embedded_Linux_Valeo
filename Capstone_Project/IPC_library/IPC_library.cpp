@@ -18,18 +18,28 @@ bool IPC_library::Receive_Message(std::string& message, bool block) {
     int flags = block ? 0 : IPC_NOWAIT;
 
     // Receive a message from the message queue
-    if (msgrcv(Msg_Id, &Message_Buffer, sizeof(Message_Buffer), 1, flags) == -1) {
-        return false; // No message received
+   if (msgrcv(Msg_Id, &Message_Buffer, sizeof(Message_Buffer), 1, flags) == -1) {
+    if (block && errno == ENOMSG) {
+        // No message received, but we were blocking, so wait for a message
+        while (true) {
+            if (msgrcv(Msg_Id, &Message_Buffer, sizeof(Message_Buffer), 1, IPC_NOWAIT) != -1) {
+                // Message received
+                break;
+            }
+            // Sleep for a short duration before checking again
+            // You can adjust the sleep duration as needed
+            usleep(10000); // Sleep for 10 milliseconds
+        }
+    } else {
+        // Error or no message received (non-blocking)
+        return false;
     }
+}
     // Copy the received message to the 'message' variable
     message = Message_Buffer.messageText;
     return true;
 }
 
-// Remove the queue
-void IPC_library::Remove_Queue() {
-    msgctl(Msg_Id, IPC_RMID, NULL); /* NULL = 'no flags' */
-}
 
 // Send a message to the message queue
 bool IPC_library::Send_Message(const std::string& message) {
@@ -50,5 +60,11 @@ bool IPC_library::Send_Message(const std::string& message) {
 
     return true;
 }
+
+// Remove the queue
+void IPC_library::Remove_Queue() {
+    msgctl(Msg_Id, IPC_RMID, NULL); /* NULL = 'no flags' */
+}
+
 
 

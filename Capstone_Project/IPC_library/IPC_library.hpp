@@ -5,7 +5,7 @@
 #include <cstring>
 #include <sys/ipc.h>
 #include <sys/msg.h>
-
+#include <unistd.h> 
 class IPC_library {
 public:
 

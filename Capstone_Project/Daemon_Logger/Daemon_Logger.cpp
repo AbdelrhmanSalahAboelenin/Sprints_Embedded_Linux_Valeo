@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <cstring>
 #include <string>
 #include <boost/filesystem.hpp> // Include the <boost/filesystem.hpp> header
@@ -11,8 +12,8 @@
 #include <boost/log/support/date_time.hpp>
 #include <boost/asio.hpp>
 
-#define PORT "1234"
-#define IP "192.168.1.4"  // Laptop IP address 192.168.1.4
+#define PORT "1111"
+#define IP "192.168.1.6"  // Laptop IP address 192.168.1.4
 #define MAX_FILE_SIZE 1024
 
 namespace fs = boost::filesystem; // Create an alias for the namespace
@@ -49,8 +50,28 @@ int main() {
 
     BOOST_LOG_TRIVIAL(info) << "Daemon_logger: Info message received.";
 
+    std::string configFileName  = "../../config.txt";
+    std::string programFile;
+    int program_port;
+    
+    std::ifstream configFile(configFileName );
+    if (!configFile.is_open()) {
+        std::cerr << "Error: can't open config file.\n";
+        return 1;
+    }
+    
+    // Read program file and port from the config file
+    std::getline(configFile, programFile);
+    configFile >> program_port;
+    
+    // Close the configuration file
+    configFile.close();
+    
+    //to convert from std::string to const char*
+    const char* program_file = programFile.c_str();
+
     // Initialize the IPC library for receiving log messages from Math_Application
-    IPC_library receiver("Program_File", 13);
+    IPC_library receiver(program_file, program_port);
 
     std::string receivedMessage; // Log received from the Math Application and will be sent to Logger receiver app
 
@@ -95,3 +116,4 @@ int main() {
 
     return 0;
 }
+

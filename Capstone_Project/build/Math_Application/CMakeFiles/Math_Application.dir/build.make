@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+CMAKE_SOURCE_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
+CMAKE_BINARY_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
 
 # Include any dependencies generated for this target.
 include Math_Application/CMakeFiles/Math_Application.dir/depend.make
@@ -72,16 +72,16 @@ include Math_Application/CMakeFiles/Math_Application.dir/flags.make
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o: Math_Application/CMakeFiles/Math_Application.dir/flags.make
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o: ../Math_Application/Math_Application.cpp
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o: Math_Application/CMakeFiles/Math_Application.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o -MF CMakeFiles/Math_Application.dir/Math_Application.cpp.o.d -o CMakeFiles/Math_Application.dir/Math_Application.cpp.o -c /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o -MF CMakeFiles/Math_Application.dir/Math_Application.cpp.o.d -o CMakeFiles/Math_Application.dir/Math_Application.cpp.o -c /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp
 
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math_Application.dir/Math_Application.cpp.i"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp > CMakeFiles/Math_Application.dir/Math_Application.cpp.i
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp > CMakeFiles/Math_Application.dir/Math_Application.cpp.i
 
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math_Application.dir/Math_Application.cpp.s"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp -o CMakeFiles/Math_Application.dir/Math_Application.cpp.s
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp -o CMakeFiles/Math_Application.dir/Math_Application.cpp.s
 
 # Object files for target Math_Application
 Math_Application_OBJECTS = \
@@ -94,18 +94,18 @@ Math_Application/Math_Application: Math_Application/CMakeFiles/Math_Application.
 Math_Application/Math_Application: Math_Application/CMakeFiles/Math_Application.dir/build.make
 Math_Application/Math_Application: IPC_library/libIPC_library.a
 Math_Application/Math_Application: Math_Application/CMakeFiles/Math_Application.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Math_Application"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Math_Application.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Math_Application"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Math_Application.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Math_Application/CMakeFiles/Math_Application.dir/build: Math_Application/Math_Application
 .PHONY : Math_Application/CMakeFiles/Math_Application.dir/build
 
 Math_Application/CMakeFiles/Math_Application.dir/clean:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && $(CMAKE_COMMAND) -P CMakeFiles/Math_Application.dir/cmake_clean.cmake
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application && $(CMAKE_COMMAND) -P CMakeFiles/Math_Application.dir/cmake_clean.cmake
 .PHONY : Math_Application/CMakeFiles/Math_Application.dir/clean
 
 Math_Application/CMakeFiles/Math_Application.dir/depend:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/CMakeFiles/Math_Application.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/CMakeFiles/Math_Application.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Math_Application/CMakeFiles/Math_Application.dir/depend
 

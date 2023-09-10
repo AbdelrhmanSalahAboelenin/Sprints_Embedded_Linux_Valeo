@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+CMAKE_SOURCE_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
+CMAKE_BINARY_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
 
 # Include any dependencies generated for this target.
 include Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/depend.make
@@ -72,16 +72,16 @@ include Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/flags.make
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o: Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/flags.make
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o: ../Logger_Receiver_App/Logger_Receiver_App.cpp
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o: Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o -MF CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o.d -o CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o -c /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o -MF CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o.d -o CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.o -c /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp
 
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.i"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp > CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.i
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp > CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.i
 
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.s"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp -o CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.s
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App/Logger_Receiver_App.cpp -o CMakeFiles/Logger_Receiver_App.dir/Logger_Receiver_App.cpp.s
 
 # Object files for target Logger_Receiver_App
 Logger_Receiver_App_OBJECTS = \
@@ -101,18 +101,18 @@ Logger_Receiver_App/Logger_Receiver_App: /usr/lib/x86_64-linux-gnu/libboost_chro
 Logger_Receiver_App/Logger_Receiver_App: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0
 Logger_Receiver_App/Logger_Receiver_App: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.74.0
 Logger_Receiver_App/Logger_Receiver_App: Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Logger_Receiver_App"
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Logger_Receiver_App.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Logger_Receiver_App"
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Logger_Receiver_App.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/build: Logger_Receiver_App/Logger_Receiver_App
 .PHONY : Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/build
 
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/clean:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && $(CMAKE_COMMAND) -P CMakeFiles/Logger_Receiver_App.dir/cmake_clean.cmake
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App && $(CMAKE_COMMAND) -P CMakeFiles/Logger_Receiver_App.dir/cmake_clean.cmake
 .PHONY : Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/clean
 
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/depend:
-	cd /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Logger_Receiver_App /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/depend
 

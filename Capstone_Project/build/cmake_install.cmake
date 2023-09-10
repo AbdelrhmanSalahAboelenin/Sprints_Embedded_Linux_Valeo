@@ -1,4 +1,4 @@
-# Install script for directory: /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+# Install script for directory: /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/cmake_install.cmake")
+  include("/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Math_Application/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger/cmake_install.cmake")
+  include("/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Daemon_Logger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/cmake_install.cmake")
+  include("/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/IPC_library/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/cmake_install.cmake")
+  include("/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/Logger_Receiver_App/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

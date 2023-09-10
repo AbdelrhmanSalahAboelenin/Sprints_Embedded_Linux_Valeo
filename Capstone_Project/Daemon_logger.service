@@ -1,0 +1,13 @@
+[Unit]
+Description=Daemon logger service
+After=network.target
+
+[Service]
+#to start the app
+ExecStart=/home/abdelrhman/Capstone_Project/Linux-project/build/Daemon_Logger
+# to start the app if it exits unexpectedly.
+Restart=always 
+User=abdelrhman
+
+[Install]
+WantedBy=multi-user.target

@@ -1,4 +1,4 @@
-# Install script for directory: /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application
+# Install script for directory: /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

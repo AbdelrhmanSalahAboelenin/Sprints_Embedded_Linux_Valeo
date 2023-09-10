@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
+CMAKE_SOURCE_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
+CMAKE_BINARY_DIR = /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -150,14 +150,14 @@ Math_Application/clean: Math_Application/CMakeFiles/Math_Application.dir/clean
 Math_Application/CMakeFiles/Math_Application.dir/all: IPC_library/CMakeFiles/IPC_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Math_Application/CMakeFiles/Math_Application.dir/build.make Math_Application/CMakeFiles/Math_Application.dir/depend
 	$(MAKE) $(MAKESILENT) -f Math_Application/CMakeFiles/Math_Application.dir/build.make Math_Application/CMakeFiles/Math_Application.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=7,8 "Built target Math_Application"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=7,8 "Built target Math_Application"
 .PHONY : Math_Application/CMakeFiles/Math_Application.dir/all
 
 # Build rule for subdir invocation for target.
 Math_Application/CMakeFiles/Math_Application.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Math_Application/CMakeFiles/Math_Application.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
 .PHONY : Math_Application/CMakeFiles/Math_Application.dir/rule
 
 # Convenience name for target.
@@ -176,14 +176,14 @@ Math_Application/CMakeFiles/Math_Application.dir/clean:
 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/all: IPC_library/CMakeFiles/IPC_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/depend
 	$(MAKE) $(MAKESILENT) -f Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build.make Daemon_Logger/CMakeFiles/Daemon_Logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=1,2 "Built target Daemon_Logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=1,2 "Built target Daemon_Logger"
 .PHONY : Daemon_Logger/CMakeFiles/Daemon_Logger.dir/all
 
 # Build rule for subdir invocation for target.
 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Daemon_Logger/CMakeFiles/Daemon_Logger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
 .PHONY : Daemon_Logger/CMakeFiles/Daemon_Logger.dir/rule
 
 # Convenience name for target.
@@ -202,14 +202,14 @@ Daemon_Logger/CMakeFiles/Daemon_Logger.dir/clean:
 IPC_library/CMakeFiles/IPC_library.dir/all:
 	$(MAKE) $(MAKESILENT) -f IPC_library/CMakeFiles/IPC_library.dir/build.make IPC_library/CMakeFiles/IPC_library.dir/depend
 	$(MAKE) $(MAKESILENT) -f IPC_library/CMakeFiles/IPC_library.dir/build.make IPC_library/CMakeFiles/IPC_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=3,4 "Built target IPC_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=3,4 "Built target IPC_library"
 .PHONY : IPC_library/CMakeFiles/IPC_library.dir/all
 
 # Build rule for subdir invocation for target.
 IPC_library/CMakeFiles/IPC_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 IPC_library/CMakeFiles/IPC_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
 .PHONY : IPC_library/CMakeFiles/IPC_library.dir/rule
 
 # Convenience name for target.
@@ -228,14 +228,14 @@ IPC_library/CMakeFiles/IPC_library.dir/clean:
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/all:
 	$(MAKE) $(MAKESILENT) -f Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/build.make Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/depend
 	$(MAKE) $(MAKESILENT) -f Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/build.make Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=5,6 "Built target Logger_Receiver_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles --progress-num=5,6 "Built target Logger_Receiver_App"
 .PHONY : Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/all
 
 # Build rule for subdir invocation for target.
 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/build/CMakeFiles 0
 .PHONY : Logger_Receiver_App/CMakeFiles/Logger_Receiver_App.dir/rule
 
 # Convenience name for target.

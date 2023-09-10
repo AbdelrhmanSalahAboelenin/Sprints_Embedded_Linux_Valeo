@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    IPC_library sender("Program_File", 13); // Connect to the existing queue
+    IPC_library sender("MathApplication", 13); // Connect to the existing queue
 
     // Send a log message from Math_Apllication to the Daemon Logger
     std::string message = "Hello Abdelrhman from Math_Application!";
@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
     char operation = argv[2][0]; 
     int num2 = std::atoi(argv[3]);
 
-std::string log_Message1 = "MathApplication logs are : \n";
+std::string log_Message1 = "MathApplication logs are : ";
         sender.Send_Message(log_Message1);
     int result = 0;
     switch (operation) {
@@ -65,12 +65,12 @@ std::string log_Message1 = "MathApplication logs are : \n";
             return 1;
     }
     // Display the result
-    std::cout << "the Result is : " << result << std::endl;
+    std::cout << "the Result is : \n" << result << std::endl;
 
         std::string log_Message3 = "the input numbers are : " + std::to_string(num1) + " and " + std::to_string(num2);
         sender.Send_Message(log_Message3);
 
-        std::string log_Message4 = "the result is : " + std::to_string(result);
+        std::string log_Message4 = "the result is : " + std::to_string(result)+"\n";
         sender.Send_Message(log_Message4);
         
         std::cout << "MathApplication: Done, the Messages sent to Daemon Logger." << std::endl;

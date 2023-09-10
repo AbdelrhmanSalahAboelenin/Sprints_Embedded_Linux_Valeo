@@ -1,5 +1,5 @@
 Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o: \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/Math_Application.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -153,8 +153,8 @@ Math_Application/CMakeFiles/Math_Application.dir/Math_Application.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/../IPC_library/IPC_library.cpp \
- /home/abderlhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/../IPC_library/IPC_library.hpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/../IPC_library/IPC_library.cpp \
+ /home/abdelrhman/Desktop/Sprints_Embedded_Linux_Valeo/Capstone_Project/Math_Application/../IPC_library/IPC_library.hpp \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/sys/ipc.h \
  /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
